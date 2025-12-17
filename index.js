@@ -9,7 +9,7 @@ function evaluate(numbers, operators) {
   console.log(numbers, operators);
   let result = numbers[0];
   let counter = 0;
-  for (let i = 1; i <= numbers.length - 1; i++) {
+  for (let i = 1; i < numbers.length; i++) {
     let op = operators[(i - 1) % operators.length];
     // take the first and second
     // console.log(numbers[i], numbers[i + 1])
